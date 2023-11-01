@@ -1,4 +1,5 @@
-import '../../../api/pdf_api.dart';
+import 'package:innovice_generator/bill_innovoice/bill_innovice/api/pdf_api.dart';
+
 import '../model/customer.dart';
 import '../model/invoice.dart';
 import '../model/supplier.dart';
