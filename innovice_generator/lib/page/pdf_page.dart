@@ -63,7 +63,7 @@ class _PdfPageState extends State<PdfPage> {
                     child: PdfPreview(
                       padding: EdgeInsets.zero,
                       // maxPageWidth: double.infinity,
-                      useActions: true,
+                      //  useActions: true,
                       build: (context) {
                         return PdfParagraphApi.generate();
                         //viewModel.createPDF();
