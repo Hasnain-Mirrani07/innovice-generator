@@ -1,9 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:innovice_generator/api/pdf_api.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart';
+
+import '../../bill_innovoice/bill_innovice/api/pdf_api.dart';
 
 class PdfParagraphApi {
   static Future<Uint8List> generate() async {

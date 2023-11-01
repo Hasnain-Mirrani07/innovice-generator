@@ -1,17 +1,18 @@
 import 'dart:io';
+import 'dart:typed_data';
 
+import 'package:innovice_generator/bill_innovoice/bill_innovice/api/pdf_api.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdf/widgets.dart';
 
-import '../../../api/pdf_api.dart';
 import '../model/customer.dart';
 import '../model/invoice.dart';
 import '../model/supplier.dart';
 import '../utils.dart';
 
 class PdfInvoiceApi {
-  static Future<File> generate(Invoice invoice) async {
+  static Future<Uint8List> generate(Invoice invoice) async {
     final pdf = Document();
 
     pdf.addPage(MultiPage(
@@ -26,7 +27,8 @@ class PdfInvoiceApi {
       footer: (context) => buildFooter(invoice),
     ));
 
-    return PdfApi.saveDocument(name: 'my_invoice.pdf', pdf: pdf);
+    PdfApi.saveDocument(name: 'my_invoice.pdf', pdf: pdf);
+    return pdf.save();
   }
 
   static Widget buildHeader(Invoice invoice) => Column(
