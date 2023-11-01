@@ -1,5 +1,8 @@
-import 'package:generate_pdf_invoice_example/model/customer.dart';
-import 'package:generate_pdf_invoice_example/model/supplier.dart';
+import '../../../api/pdf_api.dart';
+import '../model/customer.dart';
+import '../model/invoice.dart';
+import '../model/supplier.dart';
+import '../utils.dart';
 
 class Invoice {
   final InvoiceInfo info;
