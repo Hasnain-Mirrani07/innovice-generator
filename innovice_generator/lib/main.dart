@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:innovice_generator/page/pdf_page.dart';
 
+import 'bill_innovoice/bill_innovice/page/pdf_page.dart';
+
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([

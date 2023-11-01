@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:generate_pdf_invoice_example/api/pdf_api.dart';
-import 'package:generate_pdf_invoice_example/api/pdf_invoice_api.dart';
-import 'package:generate_pdf_invoice_example/main.dart';
-import 'package:generate_pdf_invoice_example/model/customer.dart';
-import 'package:generate_pdf_invoice_example/model/invoice.dart';
-import 'package:generate_pdf_invoice_example/model/supplier.dart';
-import 'package:generate_pdf_invoice_example/widget/button_widget.dart';
-import 'package:generate_pdf_invoice_example/widget/title_widget.dart';
+import 'package:pdf/widgets.dart';
+
+import '../../../api/pdf_api.dart';
+import '../model/customer.dart';
+import '../model/invoice.dart';
+import '../model/supplier.dart';
+import '../utils.dart';
 
 class PdfPage extends StatefulWidget {
   @override
