@@ -36,17 +36,17 @@ class CustomDialogBox {
               onPressed: () => Navigator.pop(context),
               child: Text('Cancel'),
             ),
-            // TextButton(
-            //   onPressed: () {
-            //     // Send them to your email maybe?
-            //     viewModel.title.value = titleController.text.toString();
-            //     viewModel.adress.value = adress.text;
-            //     viewModel.paymentMethod.value = paymentMethod.text;
-            //     Get.offAll(() => BillingInnoviceView());
-            //     //  Navigator.pop(context);
-            //   },
-            //   child: Text('Send'),
-            // ),
+            TextButton(
+              onPressed: () {
+                // Send them to your email maybe?
+                viewModel.title.value = titleController.text.toString();
+                viewModel.adress.value = adress.text;
+                viewModel.paymentMethod.value = paymentMethod.text;
+                Get.offAll(() => BillingInnoviceView());
+                //  Navigator.pop(context);
+              },
+              child: Text('Send'),
+            ),
           ],
         );
       },
